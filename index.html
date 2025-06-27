@@ -1053,14 +1053,12 @@
   </script>
 
 
-   <!-- จัดให้อยู่กลางทั้งแนวตั้งและแนวนอน -->
 <style>
+  /* ครอบเพื่อจัดกลาง */
   #histats_wrapper {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; /* ปรับตำแหน่งแนวตั้งตามต้องการ */
   }
 
   #histatsC {
@@ -1069,14 +1067,14 @@
   }
 </style>
 
-<!-- Histats START -->
+<!-- Histats.com START -->
 <div id="histats_wrapper">
   <div id="histats_counter"></div>
 </div>
 
 <script type="text/javascript">
   var _Hasync = _Hasync || [];
-  _Hasync.push(['Histats.startgif', '1,4959928,4,10047,""']);
+  _Hasync.push(['Histats.startgif', '1,4959928,4,10047,""']); // ลบ CSS ที่สั่ง fixed ออก
   _Hasync.push(['Histats.fasi', '1']);
   _Hasync.push(['Histats.track_hits', '']);
   (function () {
@@ -1095,7 +1093,7 @@
     </a>
   </div>
 </noscript>
-<!-- Histats END -->
+<!-- Histats.com END -->
  </body>
   </html>
        
