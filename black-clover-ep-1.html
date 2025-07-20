@@ -56,7 +56,7 @@
     <div class="nav-buttons">
       
       <a href="/">ทั้งหมด</a>
-      <a href="black-clover-ep-2.html">ถัดไป</a>
+      <a href='black-clover-ep-2.html'>ถัดไป</a>
     </div>
   </main>
 
@@ -64,7 +64,7 @@
     <div id="video-overlay" onclick="showVideo()">
       <div class="play-button"></div>
     </div>
-    <iframe allow="autoplay" allowfullscreen id="videoIframe" src="" title="Black Clover แบล็คโคลเวอร์ ตอนที่ 1 พากย์ไทย"></iframe>
+    <iframe allow="autoplay" allowfullscreen id="videoIframe" src="" title="Black Clover ตอนที่ 1"></iframe>
   </div>
 
   <footer>
@@ -86,7 +86,7 @@
       setTimeout(() => {
         window.open('/go.html', '_blank');
       }, 700);
-      const encodedSrc = 'aHR0cHM6Ly9hcmNoaXZlLm9yZy9lbWJlZC9ibGFjay1jbG92ZXItMS1hbmk=';
+      const encodedSrc = 'aHR0cHM6Ly9hcmNoaXZlLm9yZy9lbWJlZC9ibGFjay1jbG92ZXItMS1h';
       const videoUrl = atob(encodedSrc);
       const iframe = document.getElementById('videoIframe');
       iframe.src = videoUrl;
